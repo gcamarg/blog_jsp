@@ -85,14 +85,14 @@
             <figcaption class="blockquote-footer pt-2">
                 <%=c.getCreatedAt()%> 
             </figcaption>
-            <p class="card-text fs-5"><%=c.getBody()%></p>    
+            <p class="card-text fs-5"><%=c.getBody()%></p>   
+        </div>
             <%} if( isAdmin && !approved ){ %>
                 <div class="ms-2 admin-approval">
                     <button class="btn btn-success" onclick="moderarComentario(<%=c.getId()%>, 'approveComment.jsp')">Aprovar</button>
                     <button class="btn btn-danger" onclick="moderarComentario(<%=c.getId()%>, 'deleteComment.jsp')">Deletar</button>
                 </div>  
             <%}%>
-        </div>
         <hr />
     <%}%>
     <% if(isLogged){%>
