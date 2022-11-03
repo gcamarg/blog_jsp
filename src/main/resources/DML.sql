@@ -47,5 +47,5 @@ insert into posts(title, body, createdAt, userId) values
 		("I love it!", now(), 4, 13, false),
 		("You should post more often!", now(), 2, 12, true),
 		("Love your posts!", now(), 3, 12, true),
-		("Soo cooool :D!!!", now(), 4, 12, true),
+		("Soo cooool :D!!!", now(), 4, 12, true);
     
